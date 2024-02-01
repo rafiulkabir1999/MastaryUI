@@ -4,6 +4,17 @@ import Image from "next/image";
 import React, { useRef } from "react";
 function page() {
   const ImgContainer = useRef(null);
+  const [fromdata , setFromdata] = React.useState({
+    name:'',
+    phone:'',
+    email:'',
+    dob:"",
+    password:"",
+    gender:"",
+    profile:"",
+    bloodgroup:"",
+}
+)
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("handlesubmit");
@@ -12,13 +23,13 @@ function page() {
   const changeImage = () => {
     ImgContainer.current.click();
   };
-  const [image, setImage] = React.useState();
+  const [image, setImage] = React.useState();fdgdgfdgdf  hghgkfgfsdfsfafa  one three
   const handleImageChange = () => {
     const IMG = event.target.files[0];
     setImage(IMG);
   };
   return (
-    <div className="container">
+    <div className="cont sdfafasfafsfasfsf safsfla
       <div className="rounded justifyter w-full">
         <div className="flex text-base p-3 text-white font-bold bg-sky-300 gap-2">
           <p>Edit</p>
@@ -26,7 +37,7 @@ function page() {
           <p>Profile</p>
         </div>
         <form onSubmit={handleSubmit} className="">
-          <div className=" flex flex-col items-center p-6 gap-5 shadow rounded shadow  lg:flex-row">
+          <div className=" flex flex-col items-center p-6 gap-5 shadow rounded  lg:flex-row">
             <div className="flex flex-col   w-full ">
               <div className="w-40 h-40  mb-4 flex mx-auto md:mx-0">
                 <div
@@ -53,14 +64,14 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="grid w-full gap-5 sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 xl:gap-x-10">
+              <div className="grid w-full gap-5 sm:grid-cols-1  md:grid-cols-2 lg:gap-x-10 ">
                 <label htmlFor="name" className="flex flex-col text-xs gap-2">
                   Name
                   <input
                     type="text"
                     className="p-2 outline-none border border-gray-400 bg-gray-50"
                     placeholder="ex: Nahid Ul Kabir"
-                  />
+onChange={handleChange}/>
                 </label>
                 <label htmlFor="name" className="flex flex-col text-xs gap-2">
                   Name
