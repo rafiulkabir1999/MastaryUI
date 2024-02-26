@@ -25,6 +25,11 @@ const MyComponent = () => {
               Table
             </li>
           </Link>
+          <Link href="/dashboard">
+            <li className="text-orange-500 text-sm hover:text-orange-700">
+              Dashboard
+            </li>
+          </Link>
         </ul>
       </div>
     </div>

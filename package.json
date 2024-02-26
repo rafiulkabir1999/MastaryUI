@@ -9,7 +9,10 @@
     "lint": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
   },
   "dependencies": {
-    "@mui/icons-material": "^5.15.6",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
