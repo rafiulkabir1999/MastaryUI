@@ -29,7 +29,7 @@ function SideNav({ children }) {
       </div>
       <div className="flex">
         <aside
-          className={`${menu ? "-translate-x-full" : "translate-x-0"} border-t transition-all duration-150 ease-in w-52  py-4 h-screen flex flex-col border-r`}
+          className={`${menu ? "w-0 " : "w-64 block"} border-t transition-all duration-300 ease-in overflow-hidden  py-4 h-screen flex flex-col border-r`}
         >
           <SideNavItem
             icon={HomeOutlined}
@@ -114,7 +114,9 @@ function SideNav({ children }) {
             />
           </SideNavContainer>
         </aside>
-        <div className="w-full grid grid-cols-4 gap-4">{children}</div>
+        <div className="w-full grid grid-cols-4 gap-4 p-4 border mx-4">
+          {children}
+        </div>
       </div>
     </div>
   );

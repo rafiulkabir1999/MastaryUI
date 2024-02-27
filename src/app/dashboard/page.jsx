@@ -15,7 +15,7 @@ function page({}) {
 
 const Box = () => {
   return (
-    <div className="max-h-36 relative flex flex-col gap-3 bg-orange-500 rounded">
+    <div className="max-h-36 xl:max-h-52 relative flex flex-col gap-3 bg-orange-500 rounded">
       <Image src={card} fill />
       <p className="text-sm">Nahid Ul Kabir</p>
       <span className="text-xs text-gray-300">Web Dev</span>
